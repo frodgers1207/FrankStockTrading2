@@ -119,6 +119,10 @@ public class SetBuyThreshold
 	          }
 	          finally {
 	          }	
+		
+		connect.close();
+	 	resultSet.close();
+	 	preparedStatement.close();
 	}
 	 
 	private static ArrayList<String> writeResultSet(ResultSet resultSet, ArrayList<String> stockTicker) throws SQLException {

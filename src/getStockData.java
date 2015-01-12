@@ -137,6 +137,10 @@ public class getStockData
             			  } //end of parsing sub nodes
             		  }
             		  
+            		  connect.close();
+            		  resultSet.close();
+            		  preparedStatement.close();
+            		  
             		  StockQuoteObject.StockQuote(Symbol, Change, LastAskPrice, LastBidPrice, 
             				  Name, StockExchange); //pass variables into StockQuote.java
             		  
