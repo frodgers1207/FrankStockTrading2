@@ -49,8 +49,8 @@ public class Main
 		 		   }
 		 
 		System.out.println("Starting the day with a Cash Balance of: "
-				+ "["+NumberFormat.getCurrencyInstance().format(CashBalance)+"]"
-					 +" and an Assets Balance of: ["+NumberFormat.getCurrencyInstance().format(AssetsBalance)+"]");
+				+NumberFormat.getCurrencyInstance().format(CashBalance)
+				+" and an Assets Balance of: "+NumberFormat.getCurrencyInstance().format(AssetsBalance));
 		
 		connect.close();
 	 	resultSet.close();
